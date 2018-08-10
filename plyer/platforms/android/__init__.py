@@ -9,7 +9,7 @@ try:
     from android import config
     ns = config.JAVA_NAMESPACE
 except (ImportError, AttributeError) as e:
-    Logger
+    Logger.warning("using renpy")
     ns = 'org.renpy.android'
 
 if 'PYTHON_SERVICE_ARGUMENT' in environ:
